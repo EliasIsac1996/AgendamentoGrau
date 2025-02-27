@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar compromisso</title>
+</head>
+<body>
+    <h1>Cadastro de Aluno e Agendamento</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <h2>Cadastro do Aluno</h2>
+        {{ aluno_form.as_p }}
+        
+        <h2>Agendamento</h2>
+        {{ agendamento_form.as_p }}
+        
+        <button type="submit">Agendar</button>
+    </form>
+      
+</body>
+</html>
